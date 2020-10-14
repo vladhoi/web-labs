@@ -1,0 +1,19 @@
+{% extends "shared/_layout.html" %}
+
+{% block main_content %}
+    <h1>Contact me page</h1>
+
+    <h2>Links</h2>
+
+    {% for l in links %}
+        <div>
+            <span class="name">
+                {{ l.name }}:
+            </span>
+            <span class="url">
+                {{ l.url }}
+            </span>
+        </div>
+    {% endfor %}
+
+{% endblock %}
